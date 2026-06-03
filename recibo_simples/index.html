@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recibo de Prestação de Serviços</title>
+
+    <style>
+
+        body {{
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 40px;
+            border: 1px solid #000;
+            line-height: 1.8;
+        }}
+
+        h1 {{
+            text-align: center;
+            margin-bottom: 40px;
+        }}
+
+        p {{
+            font-size: 18px;
+            text-align: justify;
+        }}
+
+        .assinatura {{
+            margin-top: 80px;
+            text-align: center;
+        }}
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>RECIBO DE PRESTAÇÃO DE SERVIÇOS</h1>
+
+    <p>
+        Recebi de <strong>{cliente}</strong>,
+        inscrito(a) no CPF nº <strong>{cpf_cliente}</strong>,
+        a importância de <strong>R$ {valor}</strong>,
+        referente aos serviços de
+        <strong>{servico}</strong>.
+    </p>
+
+    <p>
+        Por ser verdade, firmo o presente recibo para dar plena e geral quitação do valor recebido.
+    </p>
+
+    <br><br>
+
+    <p>
+        {cidade}, {data_assinatura}
+    </p>
+
+    <div class="assinatura">
+
+        ___________________________________________
+
+        <br><br>
+
+        <strong>Rayane Rafaelli Terres</strong>
+        <br>
+
+        CPF: 027.276.130-32
+        <br>
+
+        Telefone: (51) 9 9640-9899
+
+    </div>
+
+</body>
+
+</html>
